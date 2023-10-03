@@ -1,0 +1,42 @@
+:root {
+	--color-bg-search-bar: #e5e5e5;
+	--color-bg-body: #f8f9fa;
+	--color-side-bar: #0f263d;
+	--color-nav-bar: #1b72e8;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.wrapper {
+    width: 100%;
+    height: 100vh;
+}
+header {
+    width: 100%;
+    height: 80px;
+    background-color: var(--color-bg-body);
+}
+header nav {
+    background-color: white;
+}
+main {
+    width: 100%;
+    height: calc(100% - 80px);
+}
+#sidebar {
+    width: 150px;
+    height: 100%;
+    background-color: var(--color-side-bar);
+    background-image: url(../img/sidebar-bg.png);
+}
+#main-content {
+    width: calc(100% - 150px);
+    overflow-y: auto;
+}
+#main-nav {
+    background-color:var(--color-nav-bar)
+}
+#main-sections {
+    background-color:var(--color-bg-body)
+}
