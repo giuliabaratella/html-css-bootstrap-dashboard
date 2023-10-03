@@ -1,8 +1,10 @@
+/* general  */
 :root {
 	--color-bg-search-bar: #e5e5e5;
 	--color-bg-body: #f8f9fa;
 	--color-side-bar: #0f263d;
 	--color-nav-bar: #1b72e8;
+    --color-text: #ffffff;
 }
 
 body {
@@ -12,6 +14,12 @@ body {
     width: 100%;
     height: 100vh;
 }
+
+a {
+    text-decoration: none;
+}
+
+/* header  */
 header {
     width: 100%;
     height: 80px;
@@ -20,23 +28,70 @@ header {
 header nav {
     background-color: white;
 }
+
+/* main  */
 main {
     width: 100%;
     height: calc(100% - 80px);
+}
+
+/* sidebar  */
+
+#sidebar-top {
+    height: calc(100% - 80px);
+}
+
+#sidebar-bottom {
+    height: 80px;
 }
 #sidebar {
     width: 150px;
     height: 100%;
     background-color: var(--color-side-bar);
     background-image: url(../img/sidebar-bg.png);
+    padding: 20px;
 }
+#sidebar .icon {
+    width: 25px;
+    margin-left: 10px;
+}
+#sidebar a {
+    color: var(--color-text);
+    column-gap: 10px;
+}
+#sidebar a:hover {
+    background-color: #344a60;
+}
+
+
+/* main-content  */
 #main-content {
     width: calc(100% - 150px);
     overflow-y: auto;
 }
 #main-nav {
-    background-color:var(--color-nav-bar)
+    background-color:var(--color-nav-bar);
 }
 #main-sections {
-    background-color:var(--color-bg-body)
+    background-color:var(--color-bg-body);
+}
+
+/* media query  */
+@media screen and (max-width:768px) {
+    #sidebar {
+        width: 70px;
+    }
+    #sidebar a span {
+        display:none;
+    }
+    #sidebar .icon {
+        margin: 0 auto;
+    }
+    #sidebar a {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+    #main-content {
+        width: calc(100% - 70px);
+    }
 }
