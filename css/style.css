@@ -116,6 +116,12 @@ main {
 #next-classes button:hover {
     background-color: var(--color-bg-search-bar);
 }
+
+/* faq  */
+#faq .accordion-button:not(.collapsed) {
+    color: var(--color-nav-bar);
+}
+
 /* media query  */
 @media screen and (max-width:768px) {
     #navbar-right .my-nav-icon {
