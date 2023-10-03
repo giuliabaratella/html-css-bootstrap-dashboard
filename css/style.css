@@ -122,6 +122,14 @@ main {
     color: var(--color-nav-bar);
 }
 
+/* statistics  */
+#statistics img {
+    width: 100%;
+}
+#statistics li a {
+    text-decoration: underline;
+}
+
 /* media query  */
 @media screen and (max-width:768px) {
     #navbar-right .my-nav-icon {
