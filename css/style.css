@@ -39,13 +39,23 @@ header nav {
 }
 header nav #search-bar {
     background-color: var(--color-bg-search-bar);
+    padding-left: 40px;
+    background-image: url(../img/magn-glass.svg);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 7px 5px;
 }
+
 header nav .my-nav-icon {
     color: var(--color-nav-icon);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #dropdown-bell a{
     color: var(--color-bell);
     cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 #dropdown-bell .dropdown-item {
     color: var(--color-nav-icon);
