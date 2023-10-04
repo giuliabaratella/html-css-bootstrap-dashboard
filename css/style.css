@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--color-bg-body);
 }
 .wrapper {
     width: 100%;
@@ -112,9 +113,12 @@ main {
 
 
 /* prossime classi  */
+#next-classes table td:first-child {
+    text-align: left;
+}
 #next-classes .class-avatar {
     width: 30px;
-    display: block;
+    display: inline-block;
 }
 #next-classes button {
     color: var(--color-nav-icon);
