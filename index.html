@@ -108,29 +108,92 @@
 
             <!-- main-content  -->
             <div id="main-content">
+
+                <!-- main-c-nav  -->
                 <div id="main-c-nav" class="container-fluid text-white">
                     <div class="row flex-md-row-reverse">
+
+                        <!-- nuovo studente  -->
                         <div class="col-12 col-md-4 col-lg-2 py-3">
                             <div class="d-inline-block me-3">Nuovo studente</div>
                             <a class="btn btn-outline-light flex" data-bs-toggle="offcanvas" href="#offcanvas-form" role="button" aria-controls="offcanvas form">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
+
+                            <!-- offcanvas  -->
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-form" aria-labelledby="offcanvasLabel">
                                 <div class="offcanvas-header">
                                   <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
                                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    <form action="">
+                                    <form  action="">
+                                        <label for="fname" class="form-label fw-medium mb-2">Nome</label>
+                                        <input type="text" id="fname" name="fname" value="" class="form-control mb-3" aria-label="name">
+
+                                        <label for="surname" class="form-label fw-medium mb-2">Cognome</label>
+                                        <input type="text" id="surname" name="surname" value="" class="form-control mb-3" aria-label="surname">
+
+                                        <label for="email" class="form-label fw-medium mb-2">Email</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="email">@</span>
+                                            <input type="text" class="form-control" aria-label="email">
+                                        </div>
+
+                                        <label for="password" class="form-label fw-medium mb-2">Password</label>
+                                        <input type="password" id="password" name="password" value="" class="form-control mb-3" aria-label="password">
+
+                                        <label for="email" class="form-label fw-medium mb-2">Indirizzo Email</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="email">@</span>
+                                            <input type="text" class="form-control" aria-label="email">
+                                        </div>
+
+                                        <label for="password" class="form-label fw-medium mb-2">Password</label>
+                                        <input type="password" id="password" name="password" value="" class="form-control mb-3" aria-label="password">
+
+                                        <label for="address" class="form-label fw-medium mb-2">Indirizzo</label>
+                                        <input type="text" id="address" name="address" value="" class="form-control mb-3" aria-label="address">
+
+                                        <label for="city" class="form-label fw-medium mb-2">Città</label>
+                                        <input type="text" id="city" name="city" value="" class="form-control mb-3" aria-label="city">
+
+                                        <label for="state" class="form-label fw-medium mb-2">Stato</label>
+                                        <select id="state" class="form-select mb-3" aria-label="state">
+                                            <option selected>Scegli...</option>
+                                            <option value="1">Italia</option>
+                                            <option value="2">Francia</option>
+                                            <option value="3">Spagna</option>
+                                        </select>
+
+                                        <label for="cap" class="form-label fw-medium mb-2">CAP</label>
+                                        <input type="text" id="cap" name="cap" value="" class="form-control mb-3" aria-label="cap">
+
+                                        <label for="photo" class="form-label fw-medium mb-2">Foto</label>
+                                        <input type="file" class="form-control mb-3" aria-label="photo" placeholder="Nessun file selezionato">
+
+                                        <div class="form-check my-4">
+                                            <input class="form-check-input" type="checkbox" value="" id="validation-check" required>
+                                            <label class="form-check-label" for="validation-check">
+                                              Seleziona per proseguire
+                                            </label>
+                                        </div>
+
+                                        <button class="btn btn-primary" type="submit">Salva</button>
+                                        <button class="btn btn-warning" type="submit">Svuota</button>
 
                                     </form>
                                 </div>
                               </div>
                         </div>
+
+                        <!-- numero studenti  -->
                         <div class="col-12 col-md-4 col-lg-4 py-3">
                             <div class="mb-2">Studenti online negli ultimi 30 minuti</div>
                             <div class="h2">125</div>
                         </div>
+
+                        <!-- badge  -->
                         <div class="col-12 col-md-4 col-lg-6 py-3">
                             <div class="d-flex align-items-center column-gap-2">
                                 <h1>Boolean</h1>
