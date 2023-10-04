@@ -118,7 +118,7 @@ main {
 
 
 /* prossime classi  */
-#next-classes table td:first-child {
+#next-classes table td:first-child, #next-classes table th:first-child {
     text-align: left;
 }
 #next-classes .class-avatar {

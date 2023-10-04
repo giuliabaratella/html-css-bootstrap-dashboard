@@ -116,7 +116,7 @@
                         <!-- nuovo studente  -->
                         <div class="col-12 col-md-4 col-lg-auto py-3 order-md-last">
                             <div class="d-inline-block me-3">Nuovo studente</div>
-                            <a class="btn btn-outline-light flex" data-bs-toggle="offcanvas" href="#offcanvas-form" role="button" aria-controls="offcanvas form">
+                            <a class="btn btn-outline-light flex" data-bs-toggle="offcanvas" href="#offcanvas-form" role="button">
                                 <i class="fa-solid fa-plus"></i>
                             </a>
 
@@ -127,7 +127,7 @@
                                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    <form action="" class="row">
+                                    <form class="row">
                                         <div class="col col-lg-6">
                                             <label for="fname" class="form-label fw-medium mb-2">Nome</label>
                                             <input type="text" id="fname" name="fname" value="" class="form-control mb-3" aria-label="name">
@@ -141,8 +141,8 @@
                                         <div class="col-12 col-lg-6">
                                             <label for="email" class="form-label fw-medium mb-2">Email</label>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="email">@</span>
-                                                <input type="text" class="form-control" aria-label="email">
+                                                <span class="input-group-text">@</span>
+                                                <input type="text" id="email" class="form-control" aria-label="email">
                                             </div>
                                         </div>
 
@@ -152,16 +152,16 @@
                                         </div>
 
                                         <div class="col-12 col-lg-6">
-                                            <label for="email" class="form-label fw-medium mb-2">Indirizzo Email</label>
+                                            <label for="email-2" class="form-label fw-medium mb-2">Indirizzo Email</label>
                                             <div class="input-group mb-3">
-                                                <span class="input-group-text" id="email">@</span>
-                                                <input type="text" class="form-control" aria-label="email">
+                                                <span class="input-group-text">@</span>
+                                                <input type="text" id="email-2" class="form-control" aria-label="email">
                                             </div>
                                         </div>
 
                                         <div class="col-12 col-lg-6">
-                                            <label for="password" class="form-label fw-medium mb-2">Password</label>
-                                            <input type="password" id="password" name="password" value="" class="form-control mb-3" aria-label="password">
+                                            <label for="password-2" class="form-label fw-medium mb-2">Password</label>
+                                            <input type="password" id="password-2" name="password" value="" class="form-control mb-3" aria-label="password">
                                         </div>
 
                                         <div class="col-12">
@@ -191,7 +191,7 @@
 
                                         <div class="col-12">
                                             <label for="photo" class="form-label fw-medium mb-2">Foto</label>
-                                            <input type="file" class="form-control mb-3" aria-label="photo" placeholder="Nessun file selezionato">
+                                            <input type="file" id="photo" class="form-control mb-3" aria-label="photo">
                                         </div>
 
                                         <div class="col-12">
@@ -260,28 +260,28 @@
                                 <div class="card-body">
                                     <table class="table table-hover text-center">
                                         <thead>
-                                          <tr>
-                                            <td scope="col" class="w-50">Nome</td>
-                                            <td scope="col" class="d-none d-md-table-cell">Data inizio</td>
-                                            <td scope="col" class="d-none d-md-table-cell">ROI</td>
-                                            <td scope="col">Stato</td>
-                                            <td scope="col">Azioni</td>
+                                          <tr class="fw-normal">
+                                            <th scope="col" class="w-50 fw-normal">Nome</th>
+                                            <th scope="col" class="d-none d-md-table-cell fw-normal">Data inizio</th>
+                                            <th scope="col" class="d-none d-md-table-cell fw-normal">ROI</th>
+                                            <th scope="col" class="fw-normal">Stato</th>
+                                            <th scope="col" class="fw-normal">Azioni</th>
                                           </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td scope="col">
+                                                <td>
                                                     <span class="class-avatar me-2">
                                                         <img class="img-fluid" src="img/class-avatar.jpg" alt="Class Avatar">
                                                     </span>
                                                     <span class="class-number">Classe 75</span>
                                                 </td>
-                                                <td scope="col" class="d-none d-md-table-cell">15 Feb 2021</td>
-                                                <td scope="col" class="d-none d-md-table-cell">20%</td>
-                                                <td scope="col">
+                                                <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
                                                     <span class="badge text-bg-success">Done</span>
                                                 </td>
-                                                <td scope="col">
+                                                <td>
                                                     <button class="btn" type="button">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
@@ -291,18 +291,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td scope="col">
+                                                <td>
                                                     <span class="class-avatar me-2">
                                                         <img class="img-fluid" src="img/class-avatar.jpg" alt="Class Avatar">
                                                     </span>
                                                     <span class="class-number">Classe 76</span>
                                                 </td>
-                                                <td scope="col" class="d-none d-md-table-cell">16 Feb 2021</td>
-                                                <td scope="col" class="d-none d-md-table-cell">20%</td>
-                                                <td scope="col">
+                                                <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
                                                     <span class="badge text-bg-success">Done</span>
                                                 </td>
-                                                <td scope="col">
+                                                <td>
                                                     <button class="btn" type="button">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
@@ -312,18 +312,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td scope="col">
+                                                <td>
                                                     <span class="class-avatar me-2">
                                                         <img class="img-fluid" src="img/class-avatar.jpg" alt="Class Avatar">
                                                     </span>
                                                     <span class="class-number">Classe 77</span>
                                                 </td>
-                                                <td scope="col" class="d-none d-md-table-cell">17 Feb 2021</td>
-                                                <td scope="col" class="d-none d-md-table-cell">20%</td>
-                                                <td scope="col">
+                                                <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
                                                     <span class="badge text-bg-warning">Process</span>
                                                 </td>
-                                                <td scope="col">
+                                                <td>
                                                     <button class="btn" type="button">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
@@ -333,18 +333,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td scope="col">
+                                                <td>
                                                     <span class="class-avatar me-2">
                                                         <img class="img-fluid" src="img/class-avatar.jpg" alt="Class Avatar">
                                                     </span>
                                                     <span class="class-number">Classe 78</span>
                                                 </td>
-                                                <td scope="col" class="d-none d-md-table-cell">18 Feb 2021</td>
-                                                <td scope="col" class="d-none d-md-table-cell">20%</td>
-                                                <td scope="col">
+                                                <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
                                                     <span class="badge text-bg-success">Done</span>
                                                 </td>
-                                                <td scope="col">
+                                                <td>
                                                     <button class="btn" type="button">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
@@ -354,18 +354,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td scope="col">
+                                                <td>
                                                     <span class="class-avatar me-2">
                                                         <img class="img-fluid" src="img/class-avatar.jpg" alt="Class Avatar">
                                                     </span>
                                                     <span class="class-number">Classe 79</span>
                                                 </td>
-                                                <td scope="col" class="d-none d-md-table-cell">19 Feb 2021</td>
-                                                <td scope="col" class="d-none d-md-table-cell">20%</td>
-                                                <td scope="col">
+                                                <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
                                                     <span class="badge text-bg-danger">Failed</span>
                                                 </td>
-                                                <td scope="col">
+                                                <td>
                                                     <button class="btn" type="button">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
@@ -375,18 +375,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td scope="col">
+                                                <td>
                                                     <span class="class-avatar me-2">
                                                         <img class="img-fluid" src="img/class-avatar.jpg" alt="Class Avatar">
                                                     </span>
                                                     <span class="class-number">Classe 80</span>
                                                 </td>
-                                                <td scope="col" class="d-none d-md-table-cell">20 Feb 2021</td>
-                                                <td scope="col" class="d-none d-md-table-cell">20%</td>
-                                                <td scope="col">
+                                                <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
                                                     <span class="badge text-bg-success">Done</span>
                                                 </td>
-                                                <td scope="col">
+                                                <td>
                                                     <button class="btn" type="button">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
@@ -396,18 +396,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td scope="col">
+                                                <td>
                                                     <span class="class-avatar me-2">
                                                         <img class="img-fluid" src="img/class-avatar.jpg" alt="Class Avatar">
                                                     </span>
                                                     <span class="class-number">Classe 81</span>
                                                 </td>
-                                                <td scope="col" class="d-none d-md-table-cell">21 Feb 2021</td>
-                                                <td scope="col" class="d-none d-md-table-cell">20%</td>
-                                                <td scope="col">
+                                                <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
                                                     <span class="badge text-bg-danger">Failed</span>
                                                 </td>
-                                                <td scope="col">
+                                                <td>
                                                     <button class="btn" type="button">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
@@ -417,18 +417,18 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td scope="col">
+                                                <td>
                                                     <span class="class-avatar me-2">
                                                         <img class="img-fluid" src="img/class-avatar.jpg" alt="Class Avatar">
                                                     </span>
                                                     <span class="class-number">Classe 82</span>
                                                 </td>
-                                                <td scope="col" class="d-none d-md-table-cell">22 Feb 2021</td>
-                                                <td scope="col" class="d-none d-md-table-cell">20%</td>
-                                                <td scope="col">
+                                                <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                                                <td class="d-none d-md-table-cell">20%</td>
+                                                <td>
                                                     <span class="badge text-bg-success">Done</span>
                                                 </td>
-                                                <td scope="col">
+                                                <td>
                                                     <button class="btn" type="button">
                                                         <i class="fa-solid fa-pen"></i>
                                                     </button>
