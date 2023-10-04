@@ -8,6 +8,7 @@
     --color-nav-icon: #5b5858;
     --color-bell: #ff8f00;
     --color-nav-badge: #165bba;
+    --color-table-icon: #6c757d;
 }
 
 body {
@@ -126,13 +127,13 @@ main {
     display: inline-block;
 }
 #next-classes button {
-    color: var(--color-nav-icon);
-    border: 1px solid var(--color-nav-icon);
+    color: var(--color-table-icon);
+    border: 1px solid var(--color-table-icon);
     padding: 5px 8px;
     margin-right: 5px;
 }
 #next-classes button:hover {
-    background-color: var(--color-bg-search-bar);
+    background-color: var(--color-text);
 }
 
 /* faq  */
