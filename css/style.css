@@ -33,12 +33,11 @@ header {
 header nav {
     background-color:var(--color-text);
 }
-#logo-small {
-    width:70px;
-    display: none;
+#logo, #logo-small {
+    height: 40px;
 }
 #logo-small img {
-    width: 100%;
+    height: 100%;
 }
 header nav #search-bar {
     background-color: var(--color-bg-search-bar);
@@ -151,20 +150,8 @@ main {
 
 /* media query  */
 @media screen and (max-width:768px) {
-    #navbar-right .my-nav-icon {
-        display: none;
-    }
-    #dropdown-bell {
-        margin: 0 auto;
-    }
     #sidebar {
         width: 70px;
-    }
-    #sidebar a span {
-        display:none;
-    }
-    #sidebar .icon {
-        margin: 0 auto;
     }
     #sidebar a {
         padding-top: 8px !important;
@@ -173,13 +160,8 @@ main {
     #main-content {
         width: calc(100% - 70px);
     }
-    #logo-small {
-        display: block;
-    }
-    #logo {
-        display: none;
-    }
 }
+
 @media screen and (min-width:992px) {
     #main-c-nav .offcanvas {
         width: 50% !important;

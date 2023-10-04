@@ -18,11 +18,11 @@
         <header class="d-flex align-items-center">
             <!-- nav  -->
             <nav class="container-fluid">
-                <div class="row align-items-center justify-content-between">
-                    <a href="#" id="logo" class="col-auto">
+                <div class="row align-items-center justify-content-between ">
+                    <a href="#" id="logo" class="col-auto d-none d-md-block ">
                         <img src="img/logo.svg" alt="Boolean">
                     </a>
-                    <a href="#" id="logo-small" class="col-auto" >
+                    <a href="#" id="logo-small" class="col-auto d-md-none" >
                         <img src="img/mobile-logo.png" alt="Boolean">
                     </a>
                     <div class="col">
@@ -32,9 +32,9 @@
                     </div>
                     <div id="navbar-right" class="col-auto">
                         <div class="d-flex align-items-center">
-                            <a href="#"><i class="fa-solid fa-list my-nav-icon"></i></a>
-                            <a href="#"><i class="fa-solid fa-circle-question my-nav-icon"></i></a>
-                            <a href="#"><i class="fa-solid fa-ellipsis-vertical my-nav-icon"></i></a>
+                            <a href="#"><i class="fa-solid fa-list my-nav-icon d-none d-md-block"></i></a>
+                            <a href="#"><i class="fa-solid fa-circle-question my-nav-icon d-none d-md-block"></i></a>
+                            <a href="#"><i class="fa-solid fa-ellipsis-vertical my-nav-icon d-none d-md-block"></i></a>
                             <div id="dropdown-bell" class="dropdown">
                                 <a data-bs-toggle="dropdown">
                                     <i class="fa-solid fa-bell"></i>
@@ -65,7 +65,7 @@
                                 <div class="icon d-flex justify-content-center">
                                     <i class="fa-solid fa-house"></i>
                                 </div>
-                                <span>
+                                <span class="d-none d-md-inline-block">
                                     Home
                                 </span>
                             </a>
@@ -75,7 +75,7 @@
                                 <div class="icon d-flex justify-content-center">
                                     <i class="fa-solid fa-chart-simple"></i>
                                 </div>
-                                <span>
+                                <span class="d-none d-md-inline-block">
                                     Stats
                                 </span>
                             </a>
@@ -85,7 +85,7 @@
                                 <div class="icon d-flex justify-content-center">
                                     <i class="fa-solid fa-signal"></i>
                                 </div>
-                                <span>
+                                <span class="d-none d-md-inline-block">
                                     Signals
                                 </span>
                             </a>
@@ -99,7 +99,7 @@
                         <div class="icon d-flex justify-content-center">
                             <i class="fa-solid fa-gear"></i>
                         </div>
-                        <span>
+                        <span class="d-none d-md-inline-block">
                             Admin
                         </span>
                     </a>
