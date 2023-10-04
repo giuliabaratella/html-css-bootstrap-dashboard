@@ -108,11 +108,53 @@
 
             <!-- main-content  -->
             <div id="main-content">
-                <div id="main-nav" class="container-fluid">
-                    <div class="row">
-                        <div class="col-4">1</div>
-                        <div class="col-4">2</div>
-                        <div class="col-4">3</div>
+                <div id="main-c-nav" class="container-fluid text-white">
+                    <div class="row flex-md-row-reverse">
+                        <div class="col-12 col-md-4 col-lg-2 py-3">
+                            <div class="d-inline-block me-3">Nuovo studente</div>
+                            <a class="btn btn-outline-light flex" data-bs-toggle="offcanvas" href="#offcanvas-form" role="button" aria-controls="offcanvas form">
+                                <i class="fa-solid fa-plus"></i>
+                            </a>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas-form" aria-labelledby="offcanvasLabel">
+                                <div class="offcanvas-header">
+                                  <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <form action="">
+
+                                    </form>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-4 py-3">
+                            <div class="mb-2">Studenti online negli ultimi 30 minuti</div>
+                            <div class="h2">125</div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-6 py-3">
+                            <div class="d-flex align-items-center column-gap-2">
+                                <h1>Boolean</h1>
+                                <span class="badge rounded-pill">Piano blaze</span>
+                            </div>
+                            <div>
+                                <span class="badge rounded-pill">3 app</span>
+                                <i class="fa-solid fa-angles-right px-1"></i>
+                                
+                                <span class="badge rounded-pill d-lg-none">
+                                    <i class="fa-solid fa-plus"></i>
+                                </span>
+                                <span class="badge rounded-pill d-none d-lg-inline-block">
+                                    Boolean mobile app
+                                </span>
+                                <span class="badge rounded-pill d-none d-lg-inline-block">
+                                    Boolean web app
+                                </span>
+                                <span class="badge rounded-pill d-none d-lg-inline-block">
+                                    Boolean blog app
+                                </span>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="main-sections" class="container-fluid">
@@ -128,7 +170,7 @@
                                     <table class="table text-center">
                                         <thead>
                                           <tr>
-                                            <td scope="col" class="w-70">Nome</td>
+                                            <td scope="col" class="w-50">Nome</td>
                                             <td scope="col" class="d-none d-md-table-cell">Data inizio</td>
                                             <td scope="col" class="d-none d-md-table-cell">ROI</td>
                                             <td scope="col">Stato</td>
@@ -385,6 +427,7 @@
                                 </div>
                             </section>
 
+                            <!-- statistics  -->
                             <section id="statistics" class="card">
                                 <div class="card mx-3">
                                     <ul class="list-group list-group-flush">

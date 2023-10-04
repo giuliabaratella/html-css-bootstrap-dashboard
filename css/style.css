@@ -7,6 +7,7 @@
     --color-text: #ffffff;
     --color-nav-icon: #5b5858;
     --color-bell: #ff8f00;
+    --color-nav-badge: #165bba;
 }
 
 body {
@@ -100,15 +101,19 @@ main {
     width: calc(100% - 150px);
     overflow-y: auto;
 }
-#main-nav {
-    background-color:var(--color-nav-bar);
-}
 #main-sections {
     background-color:var(--color-bg-body);
 }
 #main-content .card {
     margin: 20px 0;
     font-size: 0.9em;
+}
+
+#main-c-nav {
+    background-color:var(--color-nav-bar);
+}
+#main-c-nav .badge {
+    background-color: var(--color-nav-badge);
 }
 
 
@@ -123,7 +128,6 @@ main {
 #next-classes button {
     color: var(--color-nav-icon);
     border: 1px solid var(--color-nav-icon);
-    font-size: 0.8em;
     padding: 5px 8px;
     margin-right: 5px;
 }
